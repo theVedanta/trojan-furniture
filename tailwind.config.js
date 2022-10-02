@@ -18,10 +18,11 @@ module.exports = {
             inherit: colors.inherit,
             current: colors.current,
             transparent: colors.transparent,
-            black: colors.black,
-            white: colors.white,
+            white: "#FFFFFF",
+            black: "#221F20",
+            gray: "#F3F3F3",
+            gold: "#BC9C69",
             slate: colors.slate,
-            gray: colors.gray,
             zinc: colors.zinc,
             neutral: colors.neutral,
             stone: colors.stone,
@@ -366,7 +367,7 @@ module.exports = {
         },
         fontFamily: {
             sans: [
-                "ui-sans-serif",
+                "Inter",
                 "system-ui",
                 "-apple-system",
                 "BlinkMacSystemFont",
@@ -382,7 +383,7 @@ module.exports = {
                 '"Noto Color Emoji"',
             ],
             serif: [
-                "ui-serif",
+                "Marko One",
                 "Georgia",
                 "Cambria",
                 '"Times New Roman"',

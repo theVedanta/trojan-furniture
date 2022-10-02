@@ -1,3 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Marko+One&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    @apply text-black;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    @apply bg-gray;
+}
+.cont {
+    @apply px-32;
+}
+.btn {
+    @apply rounded-lg border-2 px-12 py-3 text-lg;
+    max-width: fit-content;
+}
+.btn-primary {
+    @apply bg-gold border-gold text-white transition-all hover:bg-gray hover:text-gold;
+}
