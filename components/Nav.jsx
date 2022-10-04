@@ -10,9 +10,9 @@ const Nav = () => {
         { title: "Shop", href: "/shop" },
     ];
     return (
-        <nav className="nav cont fixed top-0 left-0 w-screen bg-white flex items-center py-4 border-b-2 border-b-slate-300">
+        <nav className="nav cont z-40 fixed top-0 left-0 w-screen bg-white flex items-center py-4 border-b-2 border-b-slate-300">
             <Link href="/">
-                <a className="logo mr-10 transition-all hover:scale-110">
+                <a className="logo mr-10 transition-all hover:scale-110 flex justify-center items-center">
                     <Image alt="logo" src="/logo.png" width="35" height="20" />
                 </a>
             </Link>

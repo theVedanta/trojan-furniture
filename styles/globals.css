@@ -5,13 +5,16 @@
 @tailwind utilities;
 
 * {
-    @apply text-black;
+    @apply text-black outline-none;
 }
 
 body {
     width: 100vw;
     overflow-x: hidden;
     @apply bg-gray;
+}
+button {
+    @apply cursor-pointer;
 }
 .cont {
     @apply px-32;
@@ -21,5 +24,5 @@ body {
     max-width: fit-content;
 }
 .btn-primary {
-    @apply bg-gold border-gold text-white transition-all hover:bg-gray hover:text-gold;
+    @apply bg-gold border-gold text-white transition-all hover:bg-transparent hover:text-gold;
 }
