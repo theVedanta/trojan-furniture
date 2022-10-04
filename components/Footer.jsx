@@ -36,7 +36,7 @@ const Footer = () => {
                 </span>
             </div>
 
-            <div className="newsletter w-1/2">
+            <div className="newsletter w-1/2 pl-20">
                 <h4 className="text-gray text-3xl font-">
                     Subscribe to our Newsletter
                 </h4>

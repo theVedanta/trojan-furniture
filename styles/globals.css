@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 * {
-    @apply text-black outline-none;
+    @apply outline-none;
 }
 
 body {
