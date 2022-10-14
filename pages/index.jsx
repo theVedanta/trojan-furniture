@@ -7,11 +7,9 @@ import Quality from "../components/Quality";
 const Home = () => {
     return (
         <>
-            <Nav />
             <Hero />
             <Products />
             <Quality />
-            <Footer />
         </>
     );
 };

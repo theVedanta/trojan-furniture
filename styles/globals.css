@@ -20,9 +20,16 @@ button {
     @apply px-32;
 }
 .btn {
-    @apply rounded-lg border-2 px-12 py-3 text-lg;
+    @apply rounded-lg border-2 px-12 py-3 text-lg cursor-pointer;
     max-width: fit-content;
 }
 .btn-primary {
     @apply bg-gold border-gold text-white transition-all hover:bg-transparent hover:text-gold;
+}
+.product table th,
+.product table td {
+    @apply text-left py-2;
+}
+.product table th {
+    @apply font-semibold;
 }
