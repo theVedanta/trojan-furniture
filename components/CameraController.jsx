@@ -14,6 +14,7 @@ const CameraController = () => {
             controls.dispose();
         };
     }, [camera, gl]);
+
     return null;
 };
 export default CameraController;

@@ -5,7 +5,7 @@ const Product = () => {
     return (
         <>
             <div className="product cont flex h-screen bg-gray">
-                <ModelBox />
+                <ModelBox animate={false} />
 
                 <div className="product-info w-1/2 flex flex-col justify-center pl-10">
                     <h4 className="product-title text-5xl font-serif">

@@ -42,3 +42,7 @@ button {
 textarea.input {
     @apply h-full resize-none;
 }
+.contact {
+    background: url(../public/contact-bg.png);
+    background-size: cover;
+}

@@ -2,15 +2,16 @@ import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
-const Sofa = (props) => {
+const Sofa = ({ animate = true }) => {
     const { nodes, materials } = useGLTF("/sofa/sofa.glb");
     const sofa = useRef();
+
     useFrame(({ clock }) => {
-        sofa.current.rotation.y = clock.getElapsedTime();
+        if (animate) sofa.current.rotation.y = clock.getElapsedTime();
     });
 
     return (
-        <group ref={sofa} {...props} dispose={null}>
+        <group ref={sofa} dispose={null}>
             <group rotation={[-Math.PI / 2, 0, 0]}>
                 <group rotation={[Math.PI / 2, 0, 0]}>
                     <mesh

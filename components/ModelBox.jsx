@@ -2,7 +2,7 @@ import { Canvas } from "@react-three/fiber";
 import Sofa from "./Sofa";
 import CameraController from "./CameraController";
 
-const ModelBox = () => {
+const ModelBox = ({ camera = true, animate = true }) => {
     return (
         <div className="model w-1/2 h-full cursor-grab">
             <Canvas
@@ -14,9 +14,9 @@ const ModelBox = () => {
                 }}
                 className="z-20"
             >
-                <CameraController />
+                {camera && <CameraController />}
                 <ambientLight intensity={1} />
-                <Sofa />
+                <Sofa animate={animate} />
             </Canvas>
         </div>
     );

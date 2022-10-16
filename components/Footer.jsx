@@ -40,10 +40,10 @@ const Footer = () => {
                 <h4 className="text-gray text-3xl font-">
                     Subscribe to our Newsletter
                 </h4>
-                <div className="input rounded-lg bg-white px-5 py-4 flex items-center w-2/3 my-10">
+                <div className="footer-input rounded-lg bg-white flex px-5 items-center w-2/3 shadow my-10">
                     <FiMail className="text-2xl" />
                     <input
-                        className="px-4 "
+                        className="px-5 py-4 w-full"
                         type="text"
                         placeholder="Enter your Email Address"
                     />

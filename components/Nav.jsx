@@ -3,11 +3,11 @@ import Link from "next/link";
 
 const Nav = () => {
     const links = [
-        { title: "Shop", href: "/shop" },
+        { title: "Shop", href: "/products/1" },
         { title: "Bespoke", href: "/bespoke" },
         { title: "Corporate", href: "/shop" },
         { title: "About", href: "/bespoke" },
-        { title: "Contact", href: "/shop" },
+        { title: "Contact", href: "/contact-us" },
     ];
     return (
         <nav className="nav cont z-40 fixed top-0 left-0 w-screen bg-white flex items-center py-4 border-b-2 border-b-slate-300">
