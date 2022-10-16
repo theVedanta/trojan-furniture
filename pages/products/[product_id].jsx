@@ -1,21 +1,13 @@
-import Image from "next/image";
-import Footer from "../../components/Footer";
+import ModelBox from "../../components/ModelBox";
 import Carousel from "../../components/Carousel";
 
 const Product = () => {
     return (
         <>
             <div className="product cont flex h-screen bg-gray">
-                <div className="product-img w-1/2 h-full flex items-center">
-                    <Image
-                        src="/sofa.png"
-                        alt="sofa"
-                        width="550"
-                        height="550"
-                    />
-                </div>
+                <ModelBox />
 
-                <div className="product-info w-1/2 flex flex-col justify-center">
+                <div className="product-info w-1/2 flex flex-col justify-center pl-10">
                     <h4 className="product-title text-5xl font-serif">
                         Comfy Office Sofa
                     </h4>
@@ -54,7 +46,7 @@ const Product = () => {
                 </div>
             </div>
 
-            <div className="recommends bg-white py-20">
+            <div className="recommends cont bg-white py-20">
                 <Carousel />
             </div>
         </>
