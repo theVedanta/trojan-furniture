@@ -37,7 +37,7 @@ button {
     @apply flex w-full justify-between mt-10;
 }
 .input {
-    @apply bg-gray mx-4 px-6 py-3 rounded-lg text-lg w-full shadow;
+    @apply bg-gray mx-2 px-6 py-3 rounded-lg text-lg w-full shadow;
 }
 textarea.input {
     @apply h-full resize-none;

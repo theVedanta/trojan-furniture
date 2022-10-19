@@ -1,42 +1,47 @@
 import ModelBox from "../../components/ModelBox";
 import Carousel from "../../components/Carousel";
+import { useRouter } from "next/router";
+import cards from "../../data";
+import { useEffect, useState } from "react";
 
 const Product = () => {
+    const router = useRouter();
+    const [prod, setProd] = useState({});
+
+    useEffect(() => {
+        const id = parseInt(router.query.product_id);
+        console.log(cards.filter((card) => card.id === id));
+        setProd(cards.filter((card) => card.id === id)[0]);
+    }, [router]);
+
     return (
         <>
             <div className="product cont flex h-screen bg-gray">
-                <ModelBox animate={false} />
+                <ModelBox model={prod && prod.model} animate={false} />
 
                 <div className="product-info w-1/2 flex flex-col justify-center pl-10">
                     <h4 className="product-title text-5xl font-serif">
-                        Comfy Office Sofa
+                        {prod && prod.name}
                     </h4>
-                    <span className="text-2xl my-6">$420</span>
-                    <p className="w-11/12">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Integer nec odio. Praesent libero. Sed cursus ante
-                        dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
-                        imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce
-                        nec tellus sed augue semper porta. Mauris massa.
-                        Vestibulum lacinia arcu eget nullao.{" "}
-                    </p>
+                    <span className="text-2xl my-6">${prod && prod.price}</span>
+                    <p className="w-11/12">{prod && prod.desc}</p>
 
                     <table className="w-2/3 mt-10">
                         <tr>
                             <th>Colour</th>
-                            <td>Brown</td>
+                            <td>{prod && prod.color}</td>
                         </tr>
                         <tr>
-                            <th>Colour</th>
-                            <td>Brown</td>
+                            <th>Material</th>
+                            <td>{prod && prod.mat}</td>
                         </tr>
                         <tr>
-                            <th>Colour</th>
-                            <td>Brown</td>
+                            <th>Dimensions</th>
+                            <td>{prod && prod.dim}</td>
                         </tr>
                         <tr>
-                            <th>Colour</th>
-                            <td>Brown</td>
+                            <th>Weight</th>
+                            <td>{prod && prod.weight}</td>
                         </tr>
                     </table>
 

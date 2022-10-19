@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ModelBox from "./ModelBox";
+import Sofa from "./Sofas/Sofa1";
 
 const Hero = () => {
     return (
@@ -18,7 +19,7 @@ const Hero = () => {
                 </Link>
             </div>
 
-            <ModelBox />
+            <ModelBox model={<Sofa />} />
         </section>
     );
 };
