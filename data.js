@@ -2,6 +2,7 @@ import Sofa from "./components/Sofas/Sofa1";
 import Sofa2 from "./components/Sofas/Sofa2";
 import Sofa3 from "./components/Sofas/Sofa3";
 import Sofa4 from "./components/Sofas/Sofa4";
+import Table1 from "./components/Sofas/Table1";
 
 const cards = [
     {
@@ -46,6 +47,18 @@ const cards = [
         price: 420,
         img: "/sofa-pics/4.png",
         model: <Sofa4 animate={false} />,
+        desc: <>This is a the</>,
+        color: "Brown",
+        mat: "Wood",
+        dim: "42 x 42 x 42",
+        weight: "500",
+    },
+    {
+        id: 5,
+        name: "Table",
+        price: 420,
+        img: "/sofa-pics/5.png",
+        model: <Table1 animate={false} />,
         desc: <>This is a the</>,
         color: "Brown",
         mat: "Wood",

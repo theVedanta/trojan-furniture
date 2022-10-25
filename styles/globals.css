@@ -17,10 +17,10 @@ button {
     @apply cursor-pointer;
 }
 .cont {
-    @apply px-32;
+    @apply px-32 lap:px-20 tab:px-16 ph:px-8;
 }
 .btn {
-    @apply rounded-lg border-2 px-12 py-3 text-lg cursor-pointer;
+    @apply rounded-lg border-2 px-12 py-3 text-lg cursor-pointer blap:text-sm;
     max-width: fit-content;
 }
 .btn-primary {

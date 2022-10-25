@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FiMail } from "react-icons/fi";
+import Title from "./Title";
 
 const Footer = () => {
     const links = {
@@ -10,11 +11,9 @@ const Footer = () => {
     };
 
     return (
-        <footer className="footer bg-black cont py-20 flex">
-            <div className="w-1/2">
-                <h1 className="text-gold text-4xl font-serif">
-                    Trojan Furniture
-                </h1>
+        <footer className="footer bg-black cont py-20 flex ph:flex-col ph:py-12">
+            <div className="w-1/2 ph:w-full">
+                <Title className="text-gold">Trojan Furniture</Title>
                 <Link href="mailto:contact@craftworx.co.in">
                     <a className="flex items-center text-neutral-400 my-6">
                         <FiMail />
@@ -31,19 +30,19 @@ const Footer = () => {
                     ))}
                 </div>
 
-                <span className="text-gray">
+                <span className="text-neutral-600">
                     Trojan Furniture ©2022 All Right Reserved
                 </span>
             </div>
 
-            <div className="newsletter w-1/2 pl-20">
-                <h4 className="text-gray text-3xl font-">
+            <div className="newsletter w-1/2 pl-20 ph:w-full ph:p-0 ph:mt-24">
+                <h4 className="text-gray text-3xl font-medium lap:text-2xl">
                     Subscribe to our Newsletter
                 </h4>
-                <div className="footer-input rounded-lg bg-white flex px-5 items-center w-2/3 shadow my-10">
+                <div className="footer-input rounded-lg bg-white flex px-5 items-center w-2/3 shadow my-10 lap:w-full tab:px-4 ph:my-6">
                     <FiMail className="text-2xl" />
                     <input
-                        className="px-5 py-4 w-full"
+                        className="px-5 py-4 w-full tab:px-3 tab:py-4 tab:text-xs ph:text-sm"
                         type="text"
                         placeholder="Enter your Email Address"
                     />

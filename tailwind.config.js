@@ -8,11 +8,13 @@ module.exports = {
     darkMode: "media", // or 'class'
     theme: {
         screens: {
-            sm: "640px",
-            md: "768px",
-            lg: "1024px",
-            xl: "1280px",
-            "2xl": "1536px",
+            blap: { max: "1535px" },
+            lap: { max: "1280px" },
+            tab: { max: "1023px" },
+            bph: { max: "767px" },
+            ph: { max: "639px" },
+            mph: { max: "400px" },
+            sph: { max: "330px" },
         },
         colors: ({ colors }) => ({
             inherit: colors.inherit,

@@ -4,6 +4,7 @@ import { useEffect } from "react";
 
 const CameraController = () => {
     const { camera, gl } = useThree();
+    
     useEffect(() => {
         const controls = new OrbitControls(camera, gl.domElement);
 

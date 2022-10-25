@@ -3,6 +3,7 @@ import Carousel from "../../components/Carousel";
 import { useRouter } from "next/router";
 import cards from "../../data";
 import { useEffect, useState } from "react";
+import Title from "../../components/Title";
 
 const Product = () => {
     const router = useRouter();
@@ -20,9 +21,8 @@ const Product = () => {
                 <ModelBox model={prod && prod.model} animate={false} />
 
                 <div className="product-info w-1/2 flex flex-col justify-center pl-10">
-                    <h4 className="product-title text-5xl font-serif">
-                        {prod && prod.name}
-                    </h4>
+                    <Title>{prod && prod.name}</Title>
+
                     <span className="text-2xl my-6">${prod && prod.price}</span>
                     <p className="w-11/12">{prod && prod.desc}</p>
 
