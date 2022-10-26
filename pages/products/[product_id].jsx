@@ -17,10 +17,10 @@ const Product = () => {
 
     return (
         <>
-            <div className="product cont flex h-screen bg-gray">
+            <div className="product cont flex h-screen bg-gray tab:flex-col tab:h-auto tab:my-20">
                 <ModelBox model={prod && prod.model} animate={false} />
 
-                <div className="product-info w-1/2 flex flex-col justify-center pl-10">
+                <div className="product-info w-1/2 flex flex-col justify-center pl-10 tab:w-full tab:text-center tab:items-center tab:pl-0">
                     <Title>{prod && prod.name}</Title>
 
                     <span className="text-2xl my-6">${prod && prod.price}</span>

@@ -5,7 +5,7 @@ import Title from "./Title";
 
 const Hero = () => {
     return (
-        <section className="hero cont flex h-screen tab:flex-col tab:h-screen">
+        <section className="hero cont flex h-screen tab:flex-col tab:h-screen tab:justify-center">
             <div className="hero-info w-1/2 h-full flex flex-col justify-center blap:pr-10 tab:h-auto tab:mt-32 tab:w-full tab:items-center tab:text-center tab:px-14 ph:px-0">
                 <Title>
                     High quality furtniture made for your <u>office space.</u>

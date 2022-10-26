@@ -11,7 +11,7 @@ const Footer = () => {
     };
 
     return (
-        <footer className="footer bg-black cont py-20 flex ph:flex-col ph:py-12">
+        <footer className="footer bg-black cont py-20 flex ph:flex-col-reverse ph:py-12">
             <div className="w-1/2 ph:w-full">
                 <Title className="text-gold">Trojan Furniture</Title>
                 <Link href="mailto:contact@craftworx.co.in">
@@ -35,7 +35,7 @@ const Footer = () => {
                 </span>
             </div>
 
-            <div className="newsletter w-1/2 pl-20 ph:w-full ph:p-0 ph:mt-24">
+            <div className="newsletter w-1/2 pl-20 ph:w-full ph:p-0 ph:mb-16">
                 <h4 className="text-gray text-3xl font-medium lap:text-2xl">
                     Subscribe to our Newsletter
                 </h4>

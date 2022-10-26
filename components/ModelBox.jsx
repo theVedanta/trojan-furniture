@@ -12,7 +12,7 @@ const ModelBox = ({ camera = true, model }) => {
     }, []);
 
     return (
-        <div className="model w-1/2 h-full cursor-grab tab:w-full tab:h-1/2">
+        <div className="model w-1/2 h-full cursor-grab tab:w-full tab:h-96 ph:h-72">
             <Canvas
                 camera={{
                     fov: 60,

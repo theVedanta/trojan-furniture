@@ -17,10 +17,10 @@ button {
     @apply cursor-pointer;
 }
 .cont {
-    @apply px-32 lap:px-20 tab:px-16 ph:px-8;
+    @apply px-32 lap:px-20 tab:px-16 ph:px-8 mph:px-6;
 }
 .btn {
-    @apply rounded-lg border-2 px-12 py-3 text-lg cursor-pointer blap:text-sm;
+    @apply rounded-lg border-2 px-12 py-3 text-lg cursor-pointer blap:text-sm mph:px-8;
     max-width: fit-content;
 }
 .btn-primary {
@@ -30,6 +30,9 @@ button {
 .product table td {
     @apply text-left py-2;
 }
+.product table td {
+    @apply tab:text-center;
+}
 .product table th {
     @apply font-semibold;
 }
@@ -37,7 +40,7 @@ button {
     @apply flex w-full justify-between mt-10;
 }
 .input {
-    @apply bg-gray mx-2 px-6 py-3 rounded-lg text-lg w-full shadow;
+    @apply bg-gray mx-2 px-6 py-3 rounded-lg text-lg w-full shadow ph:mx-0 ph:text-base;
 }
 textarea.input {
     @apply h-full resize-none;
