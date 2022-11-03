@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import cards from "../../data";
 import { useEffect, useState } from "react";
 import Title from "../../components/Title";
+import Link from "next/link";
 
 const Product = () => {
     const router = useRouter();
@@ -45,9 +46,11 @@ const Product = () => {
                         </tr>
                     </table>
 
-                    <button className="btn btn-primary mt-10 !max-w-xl">
-                        Contact us
-                    </button>
+                    <Link href="/contact-us">
+                        <button className="btn btn-primary mt-10 !max-w-xl">
+                            Contact us
+                        </button>
+                    </Link>
                 </div>
             </div>
 

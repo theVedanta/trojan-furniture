@@ -23,7 +23,7 @@ const Quality = () => {
                     rest. Providing you with the best quality of services with
                     premium packaging that will leave everyone awestruck.
                 </p>
-                <Link href="/">
+                <Link href="/products">
                     <a className="btn btn-primary">Shop Now</a>
                 </Link>
             </div>

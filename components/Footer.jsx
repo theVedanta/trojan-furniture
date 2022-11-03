@@ -44,10 +44,16 @@ const Footer = () => {
                     <input
                         className="px-5 py-4 w-full tab:px-3 tab:py-4 tab:text-xs ph:text-sm"
                         type="text"
+                        id="mail"
                         placeholder="Enter your Email Address"
                     />
                 </div>
-                <button className="btn btn-primary">Submit</button>
+                <button
+                    className="btn btn-primary"
+                    onClick={() => (document.querySelector("#mail").value = "")}
+                >
+                    Submit
+                </button>
             </div>
         </footer>
     );

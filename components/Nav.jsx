@@ -4,10 +4,8 @@ import { Fi } from "react-icons/fi";
 
 const Nav = () => {
     const links = [
+        { title: "Home", href: "/" },
         { title: "Shop", href: "/products" },
-        { title: "Bespoke", href: "/bespoke" },
-        { title: "Corporate", href: "/shop" },
-        { title: "About", href: "/bespoke" },
         { title: "Contact", href: "/contact-us" },
     ];
     return (
