@@ -58,15 +58,15 @@ const cards = [
     },
     {
         id: 5,
-        name: "Table",
+        name: "High-End Table 1",
         price: 420,
         img: "/sofa-pics/5.png",
         model: <Table1 animate={false} />,
         desc: <>This is a the</>,
-        color: "Brown",
+        color: "White & Brown",
         mat: "Wood",
         dim: "42 x 42 x 42",
-        weight: "500",
+        weight: "200KG",
     },
     {
         id: 6,
