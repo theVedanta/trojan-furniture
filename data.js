@@ -17,7 +17,6 @@ const cards = [
         desc: <>Large white sofa, great for office spaces. </>,
         color: "White",
         mat: "Wood",
-        dim: "42 x 42 x 42",
         weight: "500",
     },
     {
