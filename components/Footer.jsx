@@ -17,7 +17,7 @@ const Footer = () => {
                 <Link href="mailto:contact@craftworx.co.in">
                     <a className="flex items-center text-neutral-400 my-6">
                         <FiMail />
-                        &nbsp;&nbsp;contact@craftworx.co.in
+                        &nbsp;&nbsp;contact@trojanfurnitureinc.com
                     </a>
                 </Link>
                 <div className="links flex flex-col flex-wrap w-full h-32 py-4 mt-10">
