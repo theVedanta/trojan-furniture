@@ -10,12 +10,12 @@ import Table2 from "./components/Sofas/Table2";
 const cards = [
     {
         id: 1,
-        name: "Trosseau Packaging",
+        name: "White Sofa",
         price: 420,
         img: "/sofa-pics/1.png",
         model: <Sofa animate={false} />,
-        desc: <>This is a the</>,
-        color: "Brown",
+        desc: <>Large white sofa, great for office spaces. </>,
+        color: "White",
         mat: "Wood",
         dim: "42 x 42 x 42",
         weight: "500",
