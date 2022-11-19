@@ -8,6 +8,8 @@ const Contact = () => {
                         const inps = document.querySelectorAll("form .input");
                         console.log(inps);
                         inps.forEach((inp) => (inp.value = ""));
+
+                        alert("Message sent!")
                     }}
                     className="contact-box bg-white p-16 rounded-xl flex flex-col items-center w-2/3 h-2/3 shadow lap:w-full ph:p-10 mph:px-8"
                 >
