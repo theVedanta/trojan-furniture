@@ -3,12 +3,10 @@ import { useEffect, useState } from "react";
 import CameraController from "./CameraController";
 
 const ModelBox = ({ camera = true, model }) => {
-    const [zAxis, setZAxis] = useState(3);
+    const [phone, setPhone] = useState(false);
 
     useEffect(() => {
-        window.innerWidth < 1024 && window.innerWidth > 650
-            ? setZAxis(2)
-            : setZAxis(3);
+        window.innerWidth < 900 && setPhone(true);
     }, []);
 
     return (
@@ -18,11 +16,11 @@ const ModelBox = ({ camera = true, model }) => {
                     fov: 60,
                     near: 0.1,
                     far: 1000,
-                    position: [0, 0, zAxis],
+                    position: [0, 0, phone ? 2 : 3],
                 }}
                 className="z-20"
             >
-                {camera && <CameraController />}
+                {camera && <CameraController phone={phone} />}
                 <ambientLight intensity={1} />
                 <directionalLight color="#ccc" position={[0, 0, 10]} />
                 {model}
