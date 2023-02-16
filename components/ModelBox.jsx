@@ -6,12 +6,13 @@ const ModelBox = ({ camera = true, model }) => {
     const [phone, setPhone] = useState(false);
 
     useEffect(() => {
-        window.innerWidth < 900 && setPhone(true);
+        window.innerWidth < 800 ? setPhone(true) : setPhone(false);
     }, []);
 
     return (
         <div className="model w-1/2 h-full cursor-grab tab:w-full tab:h-96 ph:h-72">
             <Canvas
+                phone={phone}
                 camera={{
                     fov: 60,
                     near: 0.1,

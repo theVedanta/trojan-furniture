@@ -32,6 +32,7 @@ const Nav = () => {
                                 router.route === link.href &&
                                 "font-semibold text-gold"
                             }`}
+                            onClick={() => setSide(false)}
                         >
                             {link.title}
                         </a>
